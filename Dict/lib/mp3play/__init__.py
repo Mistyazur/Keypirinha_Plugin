@@ -60,7 +60,7 @@ class AudioClip(object):
         Returns the length in seconds of the audio clip, rounded to the
         nearest second.
         """
-        return int(round(float(self.milliseconds()) / 1000))
+        return float(self.milliseconds() / 1000)
 
     def milliseconds(self):
         """Returns the length in milliseconds of the audio clip."""
